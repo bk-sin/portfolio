@@ -11,7 +11,9 @@ export default function Hero() {
   return (
     <section class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is John Doe</h1>
+        <h1 class="heading-primary">
+          Hey, My name is <br /> Emiliano Alegre
+        </h1>
         <div class="home-hero__info">
           <p class="text-primary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
