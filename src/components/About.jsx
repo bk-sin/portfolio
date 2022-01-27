@@ -17,7 +17,7 @@ export default function About() {
             <div class="about__content-details">
               <p class="about__content-details-para">
                 Hey! It's
-                <strong>John Doe</strong>
+                <strong>Emiliano Alegre</strong>
                 and I'm a <strong> Frontend Web Developer </strong> located in
                 Los Angeles. I've done
                 <strong> remote </strong>
@@ -46,10 +46,6 @@ export default function About() {
               <div class="skills__skill">React</div>
               <div class="skills__skill">SASS</div>
               <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Shopify</div>
-              <div class="skills__skill">Wordpress</div>
-              <div class="skills__skill">Google ADS</div>
-              <div class="skills__skill">Facebook Ads</div>
               <div class="skills__skill">Android</div>
               <div class="skills__skill">IOS</div>
             </div>
