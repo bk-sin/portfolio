@@ -28,7 +28,7 @@ export default function Navigation() {
                 className="header__main-ham-menu"
               />
             </div>
-            <span className="header__logo-sub">Alegre Emiliano</span>
+            <span className="header__logo-sub">Emi Alegre</span>
           </div>
         </a>
         <div className="header__main">

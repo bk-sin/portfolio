@@ -15,12 +15,15 @@ export default function Projects() {
         <div class="projects__content">
           <div class="projects__row">
             <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+              <video
+                width="100%"
+                /* height={240} */ autoPlay
+                loop
+                muted
+                controls={false}
+              >
+                <source src="./assets/mp4/hexagon.mp4" type="video/mp4" />
+              </video>
             </div>
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Project 1</h3>
@@ -40,12 +43,18 @@ export default function Projects() {
           </div>
           <div class="projects__row">
             <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+              <video
+                width="100%"
+                /* height={240} */ autoPlay
+                loop
+                muted
+                controls={false}
+              >
+                <source
+                  src="./assets/mp4/mytinerary_video.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Project 2</h3>
@@ -64,13 +73,16 @@ export default function Projects() {
             </div>
           </div>
           <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+            <div class="projects__row-img-cont" id="tv_container">
+              <video
+                width="100%"
+                /* height={240} */ autoPlay
+                loop
+                muted
+                controls={false}
+              >
+                <source src="./assets/mp4/itindev.mp4" type="video/mp4" />
+              </video>
             </div>
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Project 3</h3>

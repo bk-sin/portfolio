@@ -233,7 +233,7 @@ textarea {
 .home-hero {
   color: #fff;
   background: linear-gradient(
-      90deg,
+      to right,
       rgba(0, 98, 185, 0.8),
       rgba(0, 98, 185, 0.8)
     ),
