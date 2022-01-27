@@ -16,21 +16,17 @@ export default function About() {
             <h3 class="about__content-title">Get to know me!</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
-                Hey! It's
-                <strong>Emiliano Alegre</strong>
-                and I'm a <strong> Frontend Web Developer </strong> located in
-                Los Angeles. I've done
-                <strong> remote </strong>
-                projects for agencies, consulted for startups, and collaborated
-                with talented people to create
-                <strong>digital products </strong>
-                for both business and consumer use.
+                Hey! It's <strong> Emiliano Alegre </strong> and I'm a{" "}
+                <strong> Fullstack Web Developer </strong> located in Argentina.
+                I've done <strong> remote </strong> projects for agencies,
+                consulted for startups, and collaborated with talented people to
+                create <strong> digital products </strong> for both business and
+                consumer use.
               </p>
               <p class="about__content-details-para">
                 I'm a bit of a digital product junky. Over the years, I've used
                 hundreds of web and mobile apps in different industries and
-                verticals. Feel free to
-                <strong>contact</strong> me here.
+                verticals. Feel free to <strong> contact </strong> me here.
               </p>
             </div>
             <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">
