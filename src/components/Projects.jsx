@@ -33,7 +33,7 @@ export default function Projects() {
                 praesentium.
               </p>
               <a
-                href="./project-1.html"
+                href="https://hexagon-techstore.herokuapp.com/"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
               >
@@ -64,7 +64,7 @@ export default function Projects() {
                 praesentium.
               </p>
               <a
-                href="./project-2.html"
+                href="https://mytinerary-alegre.herokuapp.com/"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
               >
@@ -92,7 +92,7 @@ export default function Projects() {
                 praesentium.
               </p>
               <a
-                href="./project-3.html"
+                href="https://itindev-mindhub.herokuapp.com/"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
               >
