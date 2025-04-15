@@ -1,24 +1,31 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowUpRight, Github } from "lucide-react"
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowUpRight, Github } from "lucide-react";
 
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 interface ProjectProps {
-  title: string
-  description: string
-  image: string
-  technologies: string[]
-  demoUrl: string
-  githubUrl: string
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  demoUrl: string;
+  githubUrl: string;
 }
 
-export function ProjectCard({ title, description, image, technologies, demoUrl, githubUrl }: ProjectProps) {
-  const [isHovered, setIsHovered] = useState(false)
+export function ProjectCard({
+  title,
+  description,
+  image,
+  technologies,
+  demoUrl,
+  githubUrl,
+}: ProjectProps) {
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <Card
@@ -31,10 +38,14 @@ export function ProjectCard({ title, description, image, technologies, demoUrl, 
           src={image || "/placeholder.svg"}
           alt={title}
           fill
-          className={`object-cover transition-transform duration-500 ${isHovered ? "scale-105" : "scale-100"}`}
+          className={`object-cover transition-transform duration-500 ${
+            isHovered ? "scale-105" : "scale-100"
+          }`}
         />
         <div
-          className={`absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/80 flex items-center justify-center gap-4 transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-0"}`}
+          className={`absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/80 flex items-center justify-center gap-4 transition-opacity duration-300 ${
+            isHovered ? "opacity-100" : "opacity-0"
+          }`}
         >
           <Button size="sm" variant="secondary" asChild>
             <Link href={demoUrl} className="flex items-center gap-1">
@@ -55,23 +66,25 @@ export function ProjectCard({ title, description, image, technologies, demoUrl, 
         </div>
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech, index) => {
-            // Alternate between primary, accent and accent-secondary
+            // Alternate between primary, accent and accent-foreground
             const bgClass =
               index % 3 === 0
                 ? "bg-primary/10 text-primary"
                 : index % 3 === 1
-                  ? "bg-accent/10 text-accent"
-                  : "bg-accent-secondary/10 text-accent-secondary"
+                ? "bg-accent/10 text-accent"
+                : "bg-accent-foreground/10 text-accent-secondary";
 
             return (
-              <span key={tech} className={`px-2 py-1 rounded-md text-xs font-medium ${bgClass}`}>
+              <span
+                key={tech}
+                className={`px-2 py-1 rounded-md text-xs font-medium ${bgClass}`}
+              >
                 {tech}
               </span>
-            )
+            );
           })}
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
-

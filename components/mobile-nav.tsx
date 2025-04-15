@@ -1,27 +1,27 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Menu } from "lucide-react"
+import { useState } from "react";
+import Link from "next/link";
+import { Menu } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 interface NavItem {
-  href: string
-  label: string
+  href: string;
+  label: string;
 }
 
 const navItems: NavItem[] = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
+  { href: "#about", label: "Sobre mí" },
+  { href: "#projects", label: "Proyectos" },
   { href: "#skills", label: "Skills" },
   { href: "#blog", label: "Blog" },
-  { href: "#contact", label: "Contact" },
-]
+  { href: "#contact", label: "Contacto" },
+];
 
 export function MobileNav() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -47,12 +47,11 @@ export function MobileNav() {
           </nav>
           <div className="flex flex-col gap-2 mt-auto">
             <Button asChild className="w-full" onClick={() => setOpen(false)}>
-              <Link href="#contact">Contact Me</Link>
+              <Link href="#contact">Contacto</Link>
             </Button>
           </div>
         </div>
       </SheetContent>
     </Sheet>
-  )
+  );
 }
-
