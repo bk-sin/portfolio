@@ -126,24 +126,18 @@ export function InteractiveHero() {
         ))}
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-        <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary font-medium text-sm mb-2 animate-fade-in">
+        <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary font-medium text-sm mb-2 animate-fade-up">
           Full-Stack Developer
         </div>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up-200">
           <span className="gradient-text">Emiliano Alegre</span>
         </h1>
-        <p
-          className="max-w-[600px] text-muted-foreground text-lg md:text-xl mb-8 animate-fade-up"
-          style={{ animationDelay: "0.2s" }}
-        >
+        <p className="max-w-[600px] text-muted-foreground text-lg md:text-xl mb-8 animate-fade-up-400">
           Soy Desarrollador Full Stack de JavaScript y TypeScript. Me dedico a
           crear aplicaciones web y mobile usando herramientas como React, React
           Native, NextJS y NodeJS
         </p>
-        <div
-          className="flex flex-col sm:flex-row gap-4 animate-fade-up"
-          style={{ animationDelay: "0.4s" }}
-        >
+        <div className="flex flex-col sm:flex-row gap-4 animate-fade-up-600">
           <Button asChild size="lg">
             <Link href="#contact">Contacto</Link>
           </Button>

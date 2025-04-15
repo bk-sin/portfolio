@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   darkMode: ["class"],
@@ -87,7 +87,7 @@ const config: Config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
-        "fade-up": "fade-up 0.5s ease-out",
+        "fade-up": "fade-up 0.5s ease-out both",
         "slide-in-right": "slide-in-right 0.3s ease-out",
       },
       fontFamily: {
@@ -95,9 +95,19 @@ const config: Config = {
         heading: ["var(--font-outfit)"],
       },
     },
+    animation: {
+      "fade-in-200": "fade-in 0.5s ease-in-out 0.2s forwards",
+      "fade-in-400": "fade-in 0.5s ease-in-out 0.4s forwards",
+      "fade-in-600": "fade-in 0.5s ease-in-out 0.6s forwards",
+      "fade-up-200": "fade-up 0.5s ease-out 0.2s both",
+      "fade-up-400": "fade-up 0.5s ease-out 0.4s both",
+      "fade-up-600": "fade-up 0.5s ease-out 0.6s both",
+      "slide-in-right-200": "slide-in-right 0.5s ease-out 0.2s forwards",
+      "slide-in-right-400": "slide-in-right 0.5s ease-out 0.4s forwards",
+      "slide-in-right-600": "slide-in-right 0.5s ease-out 0.6s forwards",
+    },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
-
+export default config;
